@@ -2,6 +2,11 @@ spring:
   datasource:
     url: jdbc:h2:mem:credit-application-db
     username: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      properties:
+        hibernate.formate_sql: true
   h2:
     console:
       enabled: true
