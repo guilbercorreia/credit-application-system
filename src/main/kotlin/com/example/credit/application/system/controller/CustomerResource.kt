@@ -28,7 +28,7 @@ class CustomerResource(
 
     @DeleteMapping("/{id}")
     fun deleteCustomer(@PathVariable id: Long):ResponseEntity<Any>{
-        customerService.findById(id)
+        customerService.delete(id)
         return ResponseEntity.ok().build()
     }
 
